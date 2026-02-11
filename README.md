@@ -1,24 +1,31 @@
 # 🛠️ TradeStream AI: Proof of Concept (Nashville)
 An automated AI Dispatcher designed to bridge the gap between social media leads and trade business operations.
 
-## 🚀 Current Project Status: Phase 3 (Sandbox Complete)
-We have successfully built a "Cradle-to-Grave" automation loop that identifies service leads and schedules them without human intervention.
+## 🚀 Project Status: Phase 3 (Sandbox Complete)
+The core infrastructure is live. The system successfully identifies leads from Facebook DMs and routes them to a scheduling layer.
 
-### 🧠 Features Implemented
-* **AI Router Agent:** Deployed a logic-gate using Google Gemini to distinguish between general FAQs (pricing, service area) and actionable service leads.
-* **Social Connectivity:** Established a secure Webhook bridge to a Facebook Business Sandbox via a permanent Page Access Token.
-* **Persona Lock:** Configured a strict "Employee Persona" to ensure professional, Nashville-local customer interactions while suppressing developer-facing internal logic.
-* **Lead Extraction:** Automated the collection of physical addresses and service types from unstructured chat data.
-* **Calendar Synchronization:** Integrated a Google Calendar sink that converts identified leads into scheduled site-visit events automatically.
+### 🧠 Current Capabilities
+* **AI Router Agent:** Gemini-powered logic to distinguish FAQs from actionable service leads.
+* **Social Connectivity:** Secure Webhook bridge via permanent Page Access Token.
+* **Persona Lock:** Strict "Employee Persona" for professional, Nashville-local interactions.
+* **Calendar Synchronization:** Automated lead logging to Google Calendar.
+
+### 🗺️ The Multi-Channel Roadmap
+**Phase 4: CRM & Lead Mastery**
+* **Jobber Integration:** Automated client creation and draft quoting based on conversation data.
+* **Data Persistence:** Moving from ephemeral chat to a permanent system of record.
+
+**Phase 5: Multi-Channel Expansion**
+* **Instagram DM:** Linking the AI brain to the Instagram Business suite.
+* **WhatsApp Business:** High-fidelity media handling for gutter clog assessments.
+
+**Phase 6: Unified Voice & SMS**
+* **Twilio Integration:** Providing a local Nashville number for SMS-based lead capture.
+* **AI Voice-to-Lead:** Transcribing calls into the automated workflow.
 
 ### 🛠️ The Tech Stack
 * **Infrastructure:** Meta Developer Portal (Messenger API)
-* **Orchestration:** Make.com (formerly Integromat)
+* **Orchestration:** Make.com
 * **AI Engine:** Google Gemini (Generative AI)
-* **Database/Scheduling:** Google Calendar API
-* **Debugging:** Meta Graph API Explorer
-
-### 📈 Future Roadmap
-* **Phase 4 (Scaling):** Transition from Sandbox to Verified Business Portfolio.
-* **Phase 5 (Multi-Channel):** Deployment to Instagram DMs and WhatsApp Business API.
-* **Phase 6 (Media Handling):** Automated storage of customer-sent photos into a localized Google Drive folder for quote preparation.
+* **CRM/Scheduling:** Jobber & Google Calendar
+* **Communication:** Twilio (Upcoming)
